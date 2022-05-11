@@ -1,3 +1,5 @@
+import ReactPlayer from 'react-player';
+
 const sunIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -77,13 +79,21 @@ const ThemeSwitcher = () => {
   );
 };
 
+const VideoPlayer = () => {
+  return (
+    <div>
+      <ReactPlayer url='https://short.ink/pulZUntld' controls />
+    </div>
+    );
+};
+
 export default function Footer({ copyrightText }) {
   return (
     <footer className="py-16 flex flex-col items-center">
       <p className="dark:text-white uppercase mb-3 font-bold opacity-60">
         {copyrightText}
       </p>
-      <iframe width="100%" height="70%" src="https://short.ink/pulZUntld"></iframe>
+      <VideoPlayer />
       <ThemeSwitcher />
     </footer>
   );
