@@ -88,7 +88,7 @@ const VideoPlayer = () => {
         height="360"
         id="myId1"
         className="vedio1"
-        scrolling="0" allowfullscreen />
+        scrolling="0" allowFullScreen />
     </div>
     );
 };
