@@ -83,6 +83,7 @@ export default function Footer({ copyrightText }) {
       <p className="dark:text-white uppercase mb-3 font-bold opacity-60">
         {copyrightText}
       </p>
+      <iframe width="640" height="360" src="https://short.ink/pulZUntld" frameborder="0" scrolling="0" allowfullscreen></iframe>
       <ThemeSwitcher />
     </footer>
   );
