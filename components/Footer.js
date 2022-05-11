@@ -1,5 +1,4 @@
-import ReactPlayer from 'react-player';
-import Iframe from 'react-iframe';
+import ReactPlayer from 'react-player/lazy';
 
 const sunIcon = (
   <svg
@@ -83,12 +82,27 @@ const ThemeSwitcher = () => {
 const VideoPlayer = () => {
   return (
     <div>
-      <Iframe url="https://short.ink/pulZUntld"
-        width="640"
-        height="360"
-        id="myId1"
-        className="vedio1"
-        scrolling="0" allowFullScreen />
+      <div>
+        <ReactPlayer
+          className='react-player'
+          url='https://www.youtube.com/watch?v=iFHbzWhKfuU'
+          width='100%'
+          height='100%'
+          pip='true'
+          controls
+        />
+      </div>
+      <br />
+      <div>
+        <ReactPlayer
+          className='react-player'
+          url='https://www.youtube.com/watch?v=d6t6Zp6fIj8'
+          width='100%'
+          height='100%'
+          pip='true'
+          controls
+        />
+      </div>
     </div>
     );
 };
