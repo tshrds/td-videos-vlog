@@ -1,4 +1,5 @@
 import ReactPlayer from 'react-player';
+import Iframe from 'react-iframe';
 
 const sunIcon = (
   <svg
@@ -82,7 +83,14 @@ const ThemeSwitcher = () => {
 const VideoPlayer = () => {
   return (
     <div>
-      <ReactPlayer url='https://short.ink/pulZUntld' controls />
+      <ReactPlayer url='https://www.youtube.com/watch?v=d6t6Zp6fIj8' controls />
+      <Iframe url="https://short.ink/pulZUntld"
+        width="100%"
+        height="100%"
+        id="myId1"
+        className="vedio1"
+        frameborder="0" scrolling="0" allowfullscreen
+        styles={{height: "25px"}} />
     </div>
     );
 };
